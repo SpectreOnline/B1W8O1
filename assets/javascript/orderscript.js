@@ -29,24 +29,31 @@ function bestellingPhase1() {
 function bestellingPhase2() {
     if (AantalFris != 0) {
         TotaalFris = parseInt(AantalFris * 1.50)
-        document.write("Uw totaal voor Fris is: ", TotaalFris, "<br>");
+        //document.write("Uw totaal voor Fris is: ", TotaalFris, "<br>");
+        document.getElementById('item1amount').innerHTML = 'Uw totaal aantal fris is: ' + AantalFris;
+        document.getElementById('item1total').innerHTML = 'Uw totaal voor fris is: ' + TotaalFris, '<br>';
     }
 
     if (AantalBier != 0) {
         TotaalBier = parseInt(AantalBier * 2)
-        document.write("Uw totaal voor Bier is: ", TotaalBier, "<br>");
+        //document.write("Uw totaal voor Bier is: ", TotaalBier, "<br>");
+        document.getElementById('item2amount').innerHTML = 'Uw totaal aantal glazen bier is: ' + AantalBier;
+        document.getElementById('item2total').innerHTML = 'Uw totaal voor bier is: ' + TotaalBier, '<br>';
     }
 
     if (AantalWijn != 0) {
         TotaalWijn = parseInt(AantalWijn * 2.75)
-        document.write("Uw totaal voor Wijn is: ", TotaalWijn, "<br>");
+        //document.write("Uw totaal voor Wijn is: ", TotaalWijn, "<br>");
+        document.getElementById('item3amount').innerHTML = 'Uw totaal aantal glazen wijn is: ' + AantalWijn;
+        document.getElementById('item3total').innerHTML = 'Uw totaal voor wijn is: ' + TotaalWijn, '<br>';
+
     }
 
     if (AantalFris != 0 || AantalWijn != 0 || AantalBier != 0) {
         parseInt(TotaalBedrag += TotaalFris += TotaalBier += TotaalWijn);
-        document.write("Uw totaal bedrag is: " + TotaalBedrag);
+        //document.write("Uw totaal bedrag is: " + TotaalBedrag);
+        document.getElementById('result').innerHTML = 'Uw totaal bedrag is: ' + TotaalBedrag;
     }
 }
 
-bestellingPhase1();
 

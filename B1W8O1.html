@@ -5,11 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pappa Darron's drink hoek</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="assets/css/stylesheet.css" rel="stylesheet">
+    <title>Pappa Darron's zuip schuur</title>
 </head>
 
 <body>
-    <script src="assets/javascript/orderscript.js"></script>
+    <div class="maindiv">
+        <div class="maintext">
+            <h1>Pappa Darron's zuip schuur</h1>
+            <p>Bij Pappa Darron's drink hoek hebben wij een variatie aan drinken en de keuze om 6 of 12 bitterballen te
+                bestellen hieronder vind u onze prijzen.</p>
+            <ul>
+                <li>Fris: 1,50 per glas</li>
+                <li>Bier: 2,- per glas</li>
+                <li>Wijn: 2,75 per glas</li>
+            </ul>
+            <button class="orderbutton" onclick="bestellingPhase1()">Klik hier om te bestellen</button>
+            <p id="item1amount"></p>
+            <p id="item1total"></p>
+
+            <p id="item2amount"></p>
+            <p id="item2total"></p>
+
+            <p id='item3amount'></p>
+            <p id='item3total'></p>
+
+            <p id="result"></p>
+            <script src="assets/javascript/orderscript.js"></script>
+        </div>
+    </div>
 </body>
 
 </html>

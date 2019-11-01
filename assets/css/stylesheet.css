@@ -1,0 +1,33 @@
+body{
+    font-family: 'Lato', sans-serif;
+    background-image: url('../images/woodbackground.jpg');
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    opacity: 1.0;
+}
+
+div.maintext{
+    z-index: 1;
+    opacity: 1.0;
+    text-decoration-color: black;
+}
+
+div.maindiv{
+    z-index: 0;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: auto;
+    padding-left: 2%;
+}
+
